@@ -1,8 +1,13 @@
 package com.zipcodewilmington.bakery.services;
 
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Service;
+
 import com.zipcodewilmington.bakery.models.Baker;
 import com.zipcodewilmington.bakery.repositories.BakerRepository;
-
+@Service
+@Transactional
 public class BakerService {
     private BakerRepository repository;
 
